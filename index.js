@@ -28,8 +28,8 @@ const questions = [
 function generateShape() {
   inquirer.prompt(questions).then(
     (data) =>
-      fs.writeFile("log.txt", createShape(data), (err) =>
-        err ? console.error(err) : console.log("Success!")
+      fs.writeFile("logo.svg", createShape(data), (err) =>
+        err ? console.error(err) : console.log("Generated logo.svg")
       )
     // createShape(data)
   );
