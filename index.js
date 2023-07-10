@@ -1,6 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const createShape = require("./lib/shapes");
+const { createShape } = require("./lib/shapes");
 const questions = [
   {
     type: "input",
